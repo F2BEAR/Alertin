@@ -1,6 +1,6 @@
 # Alertín
 
-Script para enviar mensajes a traves de discord, usando Node.JS*
+Script para enviar mensajes de alerta del servidor a traves de discord usando Node.JS
 
 # Ejemplos
 
