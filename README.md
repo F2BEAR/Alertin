@@ -18,8 +18,8 @@ Script de ejemplo desde consola RouterOS:
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/F2BEAR"><img src="https://avatars0.githubusercontent.com/u/29986740" width="100px;" alt="F2BEAR"/><br /><sub><b>4dd3r</b></sub></a><br /></a></td>
-    <td align="center"><a href="https://github.com/agustt"><img src="https://avatars2.githubusercontent.com/u/46489419" width="100px;" alt="agustt"/><br /><sub><b>4katie</b></sub></a><br /></a></td>
+    <td align="center"><a href="https://github.com/F2BEAR"><img src="https://avatars0.githubusercontent.com/u/29986740" width="100px;" alt="F2BEAR"/><br /><sub><b>F2BEAR</b></sub></a><br /></a></td>
+    <td align="center"><a href="https://github.com/agustt"><img src="https://avatars2.githubusercontent.com/u/46489419" width="100px;" alt="agustt"/><br /><sub><b>agustt</b></sub></a><br /></a></td>
   </tr>
 </table>
 
