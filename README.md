@@ -1,18 +1,18 @@
 # Alertín
 
-Script para enviar mensajes de alerta del servidor a traves de discord usando Node.JS
+Discord Bot to send alert messages from the server to a Discord Server using Node.JS 
 
-# Ejemplos
+# Examples
 
-Script de ejemplo desde consola unix: 
+example script from Unix shell: 
 
 `curl -X POST -H "Content-Type: text/plain" -d 'mensaje' http://<ip>:<puerto>/alertin`
 
-Script de ejemplo desde consola RouterOS:
+Example using RouterOS console:
 
 `/tool fetch mode=https url="http://<ip>:<puerto>/alertin"  http-method=post  http-data="mensaje sito \n en otro renglon" http-header-field="content-type: text/plain"`
 
-# Creadores
+# Creators
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
