@@ -3,3 +3,7 @@ dist/
 coverage/
 lib/
 .env
+
+compose.yml
+Dockerfile
+.gitlab-ci.yml

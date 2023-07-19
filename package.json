@@ -5,9 +5,8 @@
   "main": "dist/index.ts",
   "type": "module",
   "scripts": {
-    "test": "jest --colors",
-    "start": "nodemon dist/alertin.build.js",
-    "prod": "node dist/alertin.build.js",
+    "dev": "nodemon dist/alertin.build.js",
+    "start": "node dist/alertin.build.js",
     "watch": "rollup -c -w",
     "build": "set NODE_ENV=production&& rollup -c"
   },

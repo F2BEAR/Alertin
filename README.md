@@ -1,33 +1,48 @@
 # Alertín
 
-Bot de Discord para enviar mensajes usando HTTP(s)
+Discord Bot to send messages through HTTP(s).
 
-# Instalar
+## Installation
 
-`wget https://git.stratus.services/stratus/alertin/-/raw/master/compose.yml`
+You need Node.js v16.x or higher for this package to work.
 
-`docker-compose -f compose.yml up -d`
-
-o
-
-`docker run --name alertin -p 80:8080 --env TOKEN=eoeoeo -d registry.stratus.services/stratus/alertin`
-
-
-# Ejemplos
-
-Script de ejemplo desde consola UNIX: 
+- Clone this directory:
 
 ```shell
-curl -X POST -H "Content-Type: application/json" -d '{"channel":"15556884888488444", "message": "hi there"}' http://<ip>:<puerto>/message
-```
-Script de ejemplo desde consola RouterOS:
-
-```shell
-/tool fetch mode=https url="http://<ip>:<puerto>/message"  http-method=post  http-data='{"channel":"15556884888488444", "message": "hi there"}' http-header-field="content-type: application/json"
+git clone https://github.com/F2BEAR/Alertin alertin
+cd /alertin
 ```
 
-Script de ejemplo desde consola PowerShell
+- Install dependencies:
 
 ```shell
-Invoke-WebRequest -uri "http://<ip>:<puerto>/message" -contenttype "application/json" -method post -body '{"channel":"15556884888488444", "message": "hi there"}'`
+npm install
+```
+
+- Build the project:
+
+```shell
+npm run build
+```
+
+Finally you can start it using `npm start`
+
+## Examples
+
+UNIX: 
+
+```shell
+curl -X POST -H "Content-Type: application/json" -d '{"channel":"15556884888488444", "message": "server at 192.0.0.1 not working"}' http://<ip>:<port>/message
+```
+
+RouterOS:
+
+```shell
+/tool fetch mode=https url="http://<ip>:<port>/message"  http-method=post  http-data='{"channel":"15556884888488444", "message": "server at 192.0.0.1 not working"}' http-header-field="content-type: application/json"
+```
+
+PowerShell
+
+```shell
+Invoke-WebRequest -uri "http://<ip>:<port>/message" -contenttype "application/json" -method post -body '{"channel":"15556884888488444", "message": "server at 192.0.0.1 not working"}'`
 ```
