@@ -1,9 +1,0 @@
-version: "3.9"
-services:
-  alertin:
-    image: registry.stratus.services/stratus/alertin
-    ports:
-      - "8080:18080"
-    environment:
-      - TOKEN=eoeo
-      - PORT=18080
